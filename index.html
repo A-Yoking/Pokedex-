@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pokédex</title>
+<meta name="description" content="A Pokédex built on PokéAPI: browse, filter, compare, and inspect every Pokémon.">
+<link rel="stylesheet" href="style.css"></head><body><div class="wrap">
+<header><div class="brand">Pok<span>édex</span></div><input id="q" placeholder="Search name or number…" autocomplete="off">
+<button class="btn on" data-v="dex">All</button><button class="btn" data-v="fav">★ Favorites</button><button class="btn" data-v="cmp">Compare</button></header>
+<div class="bar" id="filters"><select id="ft"><option value="">All types</option></select>
+<select id="fg"><option value="">All generations</option></select><span class="muted" id="count"></span></div>
+<main id="app"></main></div>
+<div id="modal"><div id="sheet"><button class="btn" id="close">✕</button><div id="detail"></div></div></div>
+<script src="app.js"></script></body></html>
